@@ -1,0 +1,92 @@
+@import "tailwindcss";
+@import "@fontsource/eb-garamond/latin-500.css";
+@import "@fontsource/eb-garamond/latin-600.css";
+@import "@fontsource/eb-garamond/latin-700.css";
+@import "@fontsource/eb-garamond/latin-500-italic.css";
+@import "@fontsource/eb-garamond/latin-ext-500.css";
+@import "@fontsource/eb-garamond/greek-500.css";
+@import "@fontsource/eb-garamond/greek-600.css";
+@import "@fontsource/eb-garamond/greek-ext-500.css";
+@import "@fontsource/eb-garamond/greek-ext-600.css";
+@import "@fontsource/eb-garamond/latin-ext-600.css";
+@import "@fontsource/eb-garamond/latin-ext-700.css";
+@import "@fontsource/source-sans-3/latin-400.css";
+@import "@fontsource/source-sans-3/latin-500.css";
+@import "@fontsource/source-sans-3/latin-600.css";
+@import "@fontsource/source-sans-3/latin-700.css";
+@import "@fontsource/source-sans-3/latin-400-italic.css";
+@import "@fontsource/source-sans-3/greek-400.css";
+@import "@fontsource/source-sans-3/greek-600.css";
+
+@theme {
+  --color-folio: #fbf7f0;
+  --color-parchment: #f3ead7;
+  --color-land: #f3e6cc;
+  --color-ink: #1c1712;
+  --color-muted: #5c5348;
+  --color-line: #ddcfc0;
+  --color-sea: #1b4652;
+  --color-wash: #c9dbd9;
+  --color-cinnabar: #9c3b2e;
+  --color-cinnabar-soft: #f6e4df;
+  --font-display: "EB Garamond", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-sans: "Source Sans 3", "Segoe UI", sans-serif;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    margin: 0;
+    background: var(--color-folio);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-sea);
+    outline-offset: 2px;
+  }
+}
+
+.plate-surface {
+  cursor: grab;
+  touch-action: none;
+}
+.plate-surface:active {
+  cursor: grabbing;
+}
+.plate-stroke {
+  vector-effect: non-scaling-stroke;
+  stroke-width: 1.25;
+}
+.plate-graticule {
+  fill: none;
+  stroke: var(--color-sea);
+  stroke-opacity: 0.28;
+}
+.plate-neatline {
+  fill: none;
+  stroke: var(--color-ink);
+}
+.plate-arc {
+  fill: none;
+  stroke: var(--color-cinnabar);
+  stroke-dasharray: 5 4;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

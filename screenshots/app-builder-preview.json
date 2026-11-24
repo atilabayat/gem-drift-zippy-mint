@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Oikoumenē — Greek thinkers, c. 450 BCE",
+      "hasCanvas": false,
+      "bodyTextLen": 1698,
+      "bodyTextHash": "8613106b3a2f23e413c723096cc16ac4a6127f464edcd4e3d7ba0a727a5f0ce5",
+      "bodyTextPrefix": "Oikoumenē Greek thinkers, c. 450 BCE Search thinkers, cities, sc",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Oikoumenē — Greek thinkers, c. 450 BCE",
+      "hasCanvas": false,
+      "bodyTextLen": 1515,
+      "bodyTextHash": "a7c5636551deaa668a19700904d769009ba263c49132771a2c8a1bb6f0597161",
+      "bodyTextPrefix": "Oikoumenē Greek thinkers, c. 450 BCE 14° 16° 18° 20° 22° 24° 26°",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
